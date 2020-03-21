@@ -3,7 +3,11 @@ to: src/state/<%= name %>/<%= name %>.reducer.ts
 ---
 import { handleActions } from '../_helpers/handle-actions';
 
-export const initial<%= h.changeCase.sentence(name) %>State = {
+export interface <%= h.changeCase.sentence(name) %>State {
+
+}
+
+export const initial<%= h.changeCase.sentence(name) %>State: <%= h.changeCase.sentence(name) %>State = {
 
 };
 
