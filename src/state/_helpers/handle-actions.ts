@@ -1,6 +1,6 @@
 import { SEPARATOR } from './combine-types';
 
-export type Handler = Record<string, (state: object, action: object) => object >;
+export type Handler = any;
 export type Action = {type: string};
 
 const findCombinedType = (handler: Handler, actionType: string) => Object

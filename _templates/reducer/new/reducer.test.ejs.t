@@ -1,7 +1,7 @@
 ---
 to: src/state/<%= name %>/<%= name %>.reducer.spec.ts
 ---
-import reducer, { <%= h.changeCase.sentence(name) %>State> } from './<%= name %>.reducer';
+import reducer, { <%= h.changeCase.sentence(name) %>State } from './<%= name %>.reducer';
 
 describe('<%= h.changeCase.sentence(name) %> Reducer', () => {
 

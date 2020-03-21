@@ -13,5 +13,5 @@ module.exports = [
         type: 'input',
         name: 'payload',
         message: 'It has a payload, what is the name?[none]'
-    }
+    },
 ];

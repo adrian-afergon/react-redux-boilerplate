@@ -5,4 +5,4 @@ eof_last: false
 after: import
 skip_if: import \* as <%= h.changeCase.sentence(reducer) %>Actions
 ---
-import * as <%= h.changeCase.sentence(reducer) %>Actions from "./<%= reducer %>.actions";
+import * as <%= h.changeCase.sentence(reducer) %>Actions from './<%= reducer %>.actions';
