@@ -1,6 +1,16 @@
-import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
-storiesOf('App', module).add('Hello wolrd', () => (
-    <div> Hello world from App.</div>
-));
+import { withA11y } from '@storybook/addon-a11y';
+
+export default {
+  title: 'button',
+  decorators: [withA11y],
+};
+
+export const accessible = () => <button>Accessible button</button>;
+
+export const inaccessible = () => (
+  <button style={{ backgroundColor: 'red', color: 'darkRed' }}>
+    Inaccessible button
+  </button>
+);

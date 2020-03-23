@@ -1,11 +1,13 @@
 ---
 to: src/<%= path %>/<%= name %>/<%= name %>.stories.tsx
 ---
-import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import {<%= name %>} from './<%= name %>';
+import { withA11y } from '@storybook/addon-a11y';
 
-storiesOf('<%= name %>', module)
-  .add('with text', () => (
-  <<%= name %> />
-));
+export default {
+  title: '<%= name %>',
+  decorators: [withA11y],
+};
+
+export const withText = () => <<%= name %> />;
