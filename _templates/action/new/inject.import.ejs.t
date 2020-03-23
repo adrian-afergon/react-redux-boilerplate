@@ -2,7 +2,7 @@
 to: src/state/<%= reducer %>/<%= reducer %>.reducer.ts
 inject: true
 eof_last: false
-skip_if: import { <%= h.changeCase.sentence(reducer) %>ActionTypes
+skip_if: import { <%= h.changeCase.pascal(reducer) %>ActionTypes
 prepend: true
 ---
-import { <%= h.changeCase.sentence(reducer) %>ActionTypes } from './<%= reducer %>.actions';
+import { <%= h.changeCase.pascal(reducer) %>Actions, <%= h.changeCase.pascal(reducer) %>ActionTypes } from './<%= reducer %>.actions';
